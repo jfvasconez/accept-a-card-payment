@@ -26,9 +26,12 @@ To avoid confusion, I have renamed the 2 readMe files that were provided to `Str
 7. Try a purchase using the card `4000002500003155` with any zip code, expr date, and cvc code. You should receive an authentication prompt. It should succeed when you accept. 
 8. Try a purchase using the card `4000000000009995` with any zip code, expr date, and cvc code. It should fail due to insufficient funds.
 9. Successful purchases will be recorded in a file called `Fullfillment.log` located within `accept-a-card-payment/server`.
+       
         Note: If purchases are not being recorded in the file, there may be a write permission issue on your machine.
 
 # Extra
 1. You may need the node package  “simple-node-logger”.
+        
         You should install at `accept-a-card-payment/server` with `npm install simple-node-logger --save`.
+       
         More info at: https://www.npmjs.com/package/simple-node-logger.
