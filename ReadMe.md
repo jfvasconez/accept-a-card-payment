@@ -5,14 +5,19 @@ The bulk of the code used here was acquired  via `stripe samples create accept-a
 To avoid confusion, I have renamed the 2 readMe files that were provided to `Stripe - Original README.md` 
 
 # MAKE SURE YOU HAVE THE FOLLOWING INSTALLED ON YOUR MACHINE
-1. Stripe CLI
+1. Stripe CLI. 
+
         https://stripe.com/docs/stripe-cli
-2. Node v10+
+2. Node v10+. 
+
         https://nodejs.org/en/download/
 
 # INSTRUCTIONS
 1. Create a file called `.env` file within `accept-a-card-payment/server`.
-    There is a file called `.env.example` in the root directory `accept-a-card-payment` that you can use as a guide. You simply need to fill in your `STATIC_DIR` (I used "../client"), `STRIPE_PUBLISHABLE_KEY`, `STRIPE_SECRET_KEY`, and `STRIPE_WEBHOOK_SECRET`. Pro-tip, if you install the sample app using `stripe samples create accept-a-card-payment`, and select `webhook` and `node` when prompted, you'll automatically get a `.env` created for you using your personal keys. (note: The secret key was wrong for me when I did that, so I had to update it myself manually)
+
+    There is a file called `.env.example` in the root directory `accept-a-card-payment` that you can use as a guide. You simply need to fill in your `STATIC_DIR` (I used "../client"), `STRIPE_PUBLISHABLE_KEY`, `STRIPE_SECRET_KEY`, and `STRIPE_WEBHOOK_SECRET`. 
+    
+    Pro-tip, if you install the sample app using `stripe samples create accept-a-card-payment`, and select `webhook` and `node` when prompted, you'll automatically get a `.env` created for you using your personal keys that you can use in mine. (note: The secret key was wrong for me when I did that, so I had to update it myself manually)
 2. Navigate to `accept-a-card-payment/server` in terminal and run `npm install`
 3. Run `npm start`
 4. In a new terminal window or tab, run `stripe listen --forward-to localhost:4242/webhook`
