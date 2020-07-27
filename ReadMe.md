@@ -1,5 +1,5 @@
 
-# Juan Vasconez - Stripe PM Take Home Assignment
+# Stripe Test App
 The bulk of the code used here was acquired  via `stripe samples create accept-a-card-payment` using the `web` and `node` options in the prompt.
 
 To avoid confusion, I have renamed the 2 readMe files that were provided to `Stripe - Original README.md` 
