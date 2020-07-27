@@ -19,7 +19,7 @@ To avoid confusion, I have renamed the 2 readMe files that were provided to `Str
     
     Your `STRIPE_PUBLISHABLE_KEY` and `STRIPE_SECRET_KEY` can be found at https://dashboard.stripe.com/test/apikeys. 
     
-    Rename the file to `.env` when you're done.
+    If you were making your changes within `sample_env.txt`, rename it `.env` when you're done.
     
     Optional: `STATIC_DIR` can be left unchanged unless you move files around within the sample code. 
 2. Open a new terminal window and navigate to `accept-a-card-payment/server`. Run `npm install`
@@ -33,10 +33,3 @@ To avoid confusion, I have renamed the 2 readMe files that were provided to `Str
 10. Successful purchases will be recorded in a file called `Fulfillment.log` located within `accept-a-card-payment/server`.
        
     Note: If purchases are not being recorded in the file, there may be a write permission issue on your machine.
-
-# Extra
-1. You may need the node package  “simple-node-logger” to record to fulfillment.log
-        
-        In your terminal, navigate to `accept-a-card-payment/server` and run `npm install simple-node-logger --save`. You'll 
-       
-        More info at: https://www.npmjs.com/package/simple-node-logger.
