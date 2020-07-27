@@ -13,7 +13,7 @@ To avoid confusion, I have renamed the 2 readMe files that were provided to `Str
         https://nodejs.org/en/download/
 
 # INSTRUCTIONS
-1. In your terminal, run `stripe listen --forward-to localhost:4242/webhook`. This can be run from any directory. Copy the webhook signing secret, you'll need it in the next step. You'll also want to keep this running in terminal as you go through the next steps so don't close it.
+1. In your terminal, run `stripe listen --forward-to localhost:4242/webhook`. This can be run from any directory. Copy the webhook signing secret because you'll need it in the next step. You'll also want to keep this running in terminal as you go through the next steps so don't close it.
 2. You'll need a new file called `.env` file within `accept-a-card-payment/server`. To make things easy, I've provided a sample file called `sample_env.txt` in `accept-a-card-payment/server` that you can use. Open it now to get started.
     Step 1: Paste the "webhook signing secret" from step 1 into the field titled `STRIPE_WEBHOOK_SECRET`.
     Step 2: Your `STRIPE_PUBLISHABLE_KEY` and `STRIPE_SECRET_KEY` can be found at https://dashboard.stripe.com/test/apikeys. 
