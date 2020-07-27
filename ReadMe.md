@@ -15,11 +15,11 @@ To avoid confusion, I have renamed the 2 readMe files that were provided to `Str
 # INSTRUCTIONS
 1. You'll need a new file called `.env` file within `accept-a-card-payment/server`. To make things easy, I've provided a sample file called `sample_env.txt` in `accept-a-card-payment/server` that you can use. Open it now to get started.
     
-    Step 1: You can get your `STRIPE_WEBHOOK_SECRET` by running `stripe listen` in a new terminal window. (Note: You can run this from any directory). You can close this terminal window when you're done getting your key.
+    You can get your `STRIPE_WEBHOOK_SECRET` by running `stripe listen` in a new terminal window. (Note: You can run this from any directory). You can close this terminal window when you're done getting your key.
     
-    Step 2: Your `STRIPE_PUBLISHABLE_KEY` and `STRIPE_SECRET_KEY` can be found at https://dashboard.stripe.com/test/apikeys. 
+    Your `STRIPE_PUBLISHABLE_KEY` and `STRIPE_SECRET_KEY` can be found at https://dashboard.stripe.com/test/apikeys. 
     
-    Step 3: Rename the file to `.env` when you're done.
+    Rename the file to `.env` when you're done.
     
     Optional: `STATIC_DIR` can be left unchanged unless you move files around within the sample code. 
 2. Open a new terminal window and navigate to `accept-a-card-payment/server`. Run `npm install`
