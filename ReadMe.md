@@ -19,7 +19,7 @@ To avoid confusion, I have renamed the 2 readMe files that were provided to `Str
     
     Your API keys can be found at: https://dashboard.stripe.com/test/apikeys. Note: If you have already setup the CLI, your `STRIPE_WEBHOOK_SECRET` will be found under the section "Restricted Keys" within a row called "CLI Key for [machine]"
 2. Navigate to `accept-a-card-payment/server` in terminal and run `npm install`
-3. Run `npm start`
+3. Still within `accept-a-card-payment/server`, run `npm start`
 4. In a new terminal, run `stripe listen --forward-to localhost:4242/webhook`
 5. In your browser, go to: `http://localhost:4242/`
 6. Try a purchase using the card `4242424242424242` with any zip code, expr date, and cvc code. It should succeed.
@@ -31,8 +31,8 @@ To avoid confusion, I have renamed the 2 readMe files that were provided to `Str
     Note: If purchases are not being recorded in the file, there may be a write permission issue on your machine.
 
 # Extra
-1. You may need the node package  “simple-node-logger”.
+1. You may need the node package  “simple-node-logger” to record to fulfillment.log
         
-        You should install at `accept-a-card-payment/server` with `npm install simple-node-logger --save`.
+        In your terminal, navigate to `accept-a-card-payment/server` and run `npm install simple-node-logger --save`.
        
         More info at: https://www.npmjs.com/package/simple-node-logger.
