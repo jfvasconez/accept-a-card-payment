@@ -86,7 +86,6 @@ app.post("/webhook", async (req, res) => {
     // To cancel the payment after capture you will need to issue a Refund (https://stripe.com/docs/api/refunds)
     console.log(data.object.amount + " payment captured for Order ID:" + data.object.id + " at " + data.object.created);
     log.info(data.object.amount + " payment captured for Order ID:" + data.object.id + " at " + data.object.created);
-   // console.log(data.object.id)
   }
   if (eventType === "payment_intent.created") {
     console.log("Payment Intent Created!");
