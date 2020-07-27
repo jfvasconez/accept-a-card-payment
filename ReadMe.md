@@ -4,7 +4,7 @@ The bulk of the code used here was acquired by running `stripe samples create ac
 
 To avoid confusion, I have renamed the 2 readMe files that were provided to `Stripe - Original README.md` 
 
-# MAKE SURE YOU HAVE THE FOLLOWING INSTALLED ON YOUR MACHINE
+# Prerequisites
 1. Stripe CLI. 
 
         https://stripe.com/docs/stripe-cli
