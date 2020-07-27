@@ -1,6 +1,6 @@
 
 # Stripe Test App
-The bulk of the code used here was acquired by running `stripe samples create accept-a-card-payment` via the Stripe CLI and selecting `using-webhooks`, `web` and `node` when prompted. I have made a few cosmetic changes to make it my own and also to log successful purchases in a separate file.
+The bulk of the code used here was acquired by running `stripe samples create accept-a-card-payment` via the Stripe CLI and selecting `using-webhooks`, `web`, and `node` when prompted. I have made a few cosmetic changes to make it my own and also to log successful purchases in a separate file.
 
 To avoid confusion, I have renamed the 2 readMe files that were originally provided by Stripe to `Stripe - Original README.md`. You do not need to read these unless you're curious, since my ReadMe covers the steps you'll need to take to run it.
 
